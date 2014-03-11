@@ -6,4 +6,6 @@ layout: default
   <p class="album-info"><em>{{ page.album }}</em> ({{ page.year }}) &bull; {{ page.artist }} </p>
   <p class="meta"><small>Release date: {{ page.date | date_to_string }}</small></p>
   {{ content }}
+
+  See all reviews for <a href="{{site.url}}/bands/{{ page.artist | downcase | replace: ' ', '-' }}">{{ page.artist }}</a>
 </div>
