@@ -1,0 +1,17 @@
+---
+layout: default
+title: Music Review Blog
+---
+
+<div id="home">
+  <h1>Latest Reviews</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <br>
+        <small><em>{{ post.album }}</em> ({{ post.year }}) &bull; {{ post.artist }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

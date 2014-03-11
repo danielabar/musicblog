@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<div class="post audio-review">
+  <h2>{{ page.title }}</h2>
+  <p class="album-info"><em>{{ page.album }}</em> ({{ page.year }}) &bull; {{ page.artist }} </p>
+  <p class="meta"><small>Release date: {{ page.date | date_to_string }}</small></p>
+  {{ content }}
+</div>
