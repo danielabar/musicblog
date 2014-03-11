@@ -10,7 +10,7 @@ module Jekyll
         <h3>{{ page.title }}</h3>
         <ul class="posts">
           {% for artist in page.artists %}
-            <li>{{ artist }}</li>
+            <li><a href="{{ site.url }}/bands/{{ artist | downcase | replace: ' ', '-' }}">{{ artist }}</a></li>
           {% endfor %}
         </ul>
       EOS
